@@ -1,108 +1,94 @@
-*
-{
-    margin:  0 ; 
-    padding: 0;
-
+body{
+    margin: 0px;
 }
-header
-{
-    background-image: url(original.jpg);
-    
-    background-position:center;
-}
-.main-nav
-{
-    float: right;
-    list-style:none ;
-    margin-top:30px;
-
-}
-.main-nav
-{
-    display:inline-block ;
-}
-.main-nav li a
-{
-    color: white;
-    text-decoration: 5px 20px;
-    font-family: "Roboto", sans-serif;
-    font-size: 15px;
-
-
-}
-.main-nav li.active a
-{
-    border: 1px solid white;
-
-}
-.main-nav li a:hover
-{
-    border: 1px solid white;
-    
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
-.logo img
+.nav-wrapper
 {
-    width: 150px ;
-    height: auto;
-    float: left;
+    display: flex;
+    justify-content: space-between;
+    padding: 36px;
 }
-
-body
-{
-  font-family: monospace;  
-}
-.row
-{
-    max-width: 1200px;
-    margin: auto;
-}
-
-.hero
-{
-    position: absolute;
-    width: 1200px;
-    margin-left: 0px;
-    margin-top: 0px;
+.left-side{
+    display: flex;
 
 }
-h1{
-    color: tomato;
+.right-side
+{
+    display: flex;
+}
+.nav-wrapper > .left-side > div{
+    margin-right: 20px;
+    font-size: 0.9em;
     text-transform: uppercase;
-    font-size: 70px;
-    text-align: center;
-    margin-top: 275px;
-
+       
 }
-.button
+.nav-wrapper > .right-side > div{
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+       
+}
+.nav-link-wrapper
 {
-    margin-top: 30px;
-    margin-left: 440px;
+    height:22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
 }
-
-.button{
-    border: 1px solid white;
-    padding: 10px 30px;
-    color: white;
+.nav-link-wrapper a {
+    color: #8a8a8a;
     text-decoration: none;
-margin-left: 5px;
-font-size: 13px;
-text-transform: uppercase;
+    transition: color 0.5s ;
+
+}
+.nav-link-wrapper:hover{
+    border-bottom : 1px solid black; 
+}
+.nav-link-wrapper a:hover{
+    color:  black; 
 }
 
-.btn-one
-{
-    background-color: darkorange;
-    font-family: "Roboto", sans-serif;
+
+.portfolio-item-wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+
 }
 
-.btn-two
-{
-        font-family: "Roboto", sans-serif;
+.portfolio-img-background{
+    height: 350px;
+    width: 100%;
+    background-size:cover ;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-.btn-two:hover
-{
-    background-color: darkorange;
-    transition:  all 0.5s ease-in;
-    
+
+.img-text-wrapper{
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
 }
+.subtitle{
+    font-size: 600;
+    color: white;
+}
+
+.img-darken{
+    transition: 1s;
+    filter: brightness(10%);
+}
+
+
+
+
