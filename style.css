@@ -1,6 +1,5 @@
-body{
-    margin: 0px;
-}
+
+
 .container{
     display: grid;
     grid-template-columns: 1fr;
@@ -26,10 +25,12 @@ body{
     text-transform: uppercase;
        
 }
-.nav-wrapper > .right-side > div{
-    margin-right: 20px;
-    font-size: 0.9em;
-    text-transform: uppercase;
+.logo img {
+    
+    width: 120px;
+    height: auto;
+    float: right;
+    
        
 }
 .nav-link-wrapper
@@ -45,29 +46,36 @@ body{
 
 }
 .nav-link-wrapper:hover{
-    border-bottom : 1px solid black; 
+    border-bottom : 1px solid white; 
 }
 .nav-link-wrapper a:hover{
-    color:  black; 
+    color:  white; 
+}
+.portfolio-items-wrapper
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    
 }
 
 
 .portfolio-item-wrapper{
-    display: grid;
-    grid-template-columns: 1fr;
+    
     position: relative;
+    
 
 }
 
 .portfolio-img-background{
-    height: 350px;
+    height: 400px;
     width: 100%;
-    background-size:cover ;
+    background-size: cover ;
     background-position: center;
     background-repeat: no-repeat;
+   
 }
 
-.img-text-wrapper{
+.image-text-wrapper{
     position: absolute;
     top: 0;
     display: flex;
@@ -76,17 +84,64 @@ body{
     align-items: center;
     height: 100%;
     text-align: center;
-    padding-left: 100px;
+    padding-left: 50px;
     padding-right: 100px;
 }
 .subtitle{
-    font-size: 600;
+    font-size: 2400;
+    padding-left: 420px;
     color: white;
 }
 
 .img-darken{
     transition: 1s;
     filter: brightness(10%);
+}
+.button
+{
+    margin-top: 30px;
+    margin-left: 440px;
+    
+
+    
+}
+.btn{
+    border: 1px solid black;
+    padding: 10px 30px ;
+    color: black;
+    text-decoration: none;
+    margin-right: 5px;
+    font-size: 13px;
+    text-transform: uppercase;
+    transition: color 0.5s ;
+
+}
+
+.btn-two
+{
+    
+    font-family: "Roboto" , sans-serif;
+    
+}
+.btn-two:hover
+{
+    color: white;
+    border:1px solid white;
+    transition: all 0.5s ease-in;
+
+}
+.btn-one
+{
+    
+    font-family: "Roboto" , sans-serif;
+}
+
+.btn-one:hover
+{
+    
+    border : 1px solid white; 
+    transition: all 0.5s ease-in;
+    color:  white; 
 }
 
 
