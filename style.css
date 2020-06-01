@@ -88,8 +88,8 @@
     padding-right: 100px;
 }
 .subtitle{
-    font-size: 2400;
-    padding-left: 420px;
+    font-size: 3400;
+    padding-left: 970px;
     color: white;
 }
 
@@ -100,7 +100,7 @@
 .button
 {
     margin-top: 30px;
-    margin-left: 440px;
+    margin-left: 1000px;
     
 
     
@@ -143,6 +143,5 @@
     transition: all 0.5s ease-in;
     color:  white; 
 }
-
 
 
