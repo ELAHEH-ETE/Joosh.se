@@ -1,6 +1,5 @@
-body{
-    margin: 0px;
-}
+
+
 .container{
     display: grid;
     grid-template-columns: 1fr;
@@ -26,10 +25,12 @@ body{
     text-transform: uppercase;
        
 }
-.nav-wrapper > .right-side > div{
-    margin-right: 20px;
-    font-size: 0.9em;
-    text-transform: uppercase;
+.logo img {
+    
+    width: 120px;
+    height: auto;
+    float: right;
+    
        
 }
 .nav-link-wrapper
@@ -45,10 +46,10 @@ body{
 
 }
 .nav-link-wrapper:hover{
-    border-bottom : 1px solid black; 
+    border-bottom : 1px solid white; 
 }
 .nav-link-wrapper a:hover{
-    color:  black; 
+    color:  white; 
 }
 
 
@@ -64,7 +65,7 @@ body{
     width: 100%;
     background-size:cover ;
     background-position: center;
-    background-repeat: no-repeat;
+    
 }
 
 .img-text-wrapper{
@@ -88,7 +89,28 @@ body{
     transition: 1s;
     filter: brightness(10%);
 }
+.button
+{
+    margin-top: 30px;
+    margin-left: 440px;
 
+
+}
+.btn{
+    border: 1px solid #8a8a8a;
+    padding: 10px 30px ;
+    color: #8a8a8a;
+    text-decoration: none;
+    margin-right: 5px;
+    font-size: 13px;
+    text-transform: uppercase;
+
+}
+
+.btn-one
+{
+    display: flex;
+}
 
 
 
